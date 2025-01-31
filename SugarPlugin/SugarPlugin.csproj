@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-    <AssemblyName>com.mosadie.templateplugin</AssemblyName>
-    <Product>TemplatePlugin</Product>
+    <AssemblyName>io.github.benet1one.sugarplugin</AssemblyName>
+    <Product>SugarPlugin</Product>
     <Description>A Template Plugin, this description should be changed!</Description>
     <Version>1.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>

@@ -6,19 +6,19 @@ using System;
 using MoCore;
 using Subpixel.Events;
 
-namespace TemplatePlugin
+namespace SugarPlugin
 {
     [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
     [BepInDependency("com.mosadie.mocore", BepInDependency.DependencyFlags.HardDependency)]
     [BepInProcess("Slipstream_Win.exe")]
-    public class TemplatePlugin : BaseUnityPlugin, MoPlugin
+    public class SugarPlugin : BaseUnityPlugin, MoPlugin
     {
         private static ConfigEntry<bool> debugLogs;
 
         internal static ManualLogSource Log;
 
         public static readonly string COMPATIBLE_GAME_VERSION = "4.1595"; // This is the fallback version if the version check fails, keep this up to date with the latest version of Slipstream: Rogue Space. The current versions is printed in the console when the game is started.
-        public static readonly string GAME_VERSION_URL = "https://raw.githubusercontent.com/MoSadie/Slipstream-Template-Plugin/refs/heads/main/versions.json"; //FIXME: Update this URL to point to your own version file.
+        public static readonly string GAME_VERSION_URL = "https://raw.githubusercontent.com/benet1one/SugarPlugin/refs/heads/main/versions.json"; //FIXME: Update this URL to point to your own version file.
 
         // This is called when the plugin is loaded as a component on the BepInEx GameObject.
         [System.Diagnostics.CodeAnalysis.SuppressMessage("CodeQuality", "IDE0051:Remove unused private members", Justification = "Actually used once compiled.")]
@@ -27,7 +27,7 @@ namespace TemplatePlugin
             try
             {
                 // Configure the logger, call this directly to bypass the configuration option.
-                TemplatePlugin.Log = base.Logger;
+                SugarPlugin.Log = base.Logger;
 
                 // Version checking code, if the game version is not compatible, RegisterPlugin will return false.
                 if (!MoCore.MoCore.RegisterPlugin(this))

@@ -2,7 +2,9 @@ You'll need these two files in this folder to get building working.
 
 1) Assembly-CSharp.dll
 
-You can find this file in the game files. You can get to the game files by right-click the game in Steam and selecting `Manage` -> `Browse local files`. The file is located in the `Slipstream_Win_Data/Managed` folder.
+You can find this file in the game files. 
+You can get to the game files by right-click the game in Steam and selecting 
+`Manage` -> `Browse local files`. The file is located in the `Slipstream_Win_Data/Managed` folder.
 
 2) com.mosadie.mocore.dll
 
