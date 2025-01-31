@@ -1,0 +1,16 @@
+You'll need these two files in this folder to get building working.
+
+1) Assembly-CSharp.dll
+
+You can find this file in the game files. You can get to the game files by right-click the game in Steam and selecting `Manage` -> `Browse local files`. The file is located in the `Slipstream_Win_Data/Managed` folder.
+
+2) com.mosadie.mocore.dll
+
+You can grab the latest MoCore dll from https://github.com/mosadie/MoCore/releases/latest
+
+
+If you want to add any additional libraries the game uses, you can do the following:
+
+- Put the relevant .dll in this folder.
+- Add the .dll to the .gitignore file in this folder.
+- Add the .dll to the .csproj file, use the existing entries as a template.
